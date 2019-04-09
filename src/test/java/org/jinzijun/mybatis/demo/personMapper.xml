@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="org.jinzijun.mybatis.demo.PersonMapper">
+    <select id="getById" parameterType="int" resultType="org.jinzijun.mybatis.demo.Person">
+        select * from person where id=#{id}
+    </select>
+</mapper>
